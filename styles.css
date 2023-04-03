@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    overflow: hidden;
+    user-select: none;
+  }
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    z-index: 100;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+    padding-top: 2%;
+    height: 120px;
+    width: 120px;
+}
+
+nav{
+    flex: 1;
+    padding-left: 60px;
+    padding-top: 2%;
+    z-index: 999;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #73daff;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    display: block;
+    transition: .5s;
+}
+
+nav a:hover, nav a.active{
+    background: #ff23ff;
+    color:#fff;
+    box-shadow: 0 0 4px #a7e5ff, 0 0 2px #f67af0;
+}
+
+nav ul ul li a:hover{
+    border-radius: 0px;
+    background: #fd27e0;
+}
+
+/*This is where i write the code for drop down menu */
+
+ nav ul{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    position: relative;
+ }
+
+ nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+
+ }
+
+ nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 170px;
+    float: none;
+    display: list-item;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(94, 28, 68, 0.656);
+ }
+ 
+ /* This is where the submenu starts*/
+nav ul ul ul{
+    border-top: none ;
+   
+}
+ nav ul ul ul li{
+    position: relative;
+    top: -50px;
+    left: 170px;
+
+ }
+ nav ul ul li a{
+    line-height: 20px;
+  }
+
+ nav ul ul li a{
+  color: #ffffff;
+  font-weight: 200px;
+  font-style: bold;
+  font-size: 15px;
+ }
+ nav ul ul li a i{
+    margin-left: 45px;
+  }
+ /* This is where the hover starts for the submenu*/
+
+ nav ul li:hover > ul{
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+
+
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100px;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+.content p{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 50px;
+}
+span{
+    color: #ff77cd;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content .btn{
+    display:inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 20px;
+    padding: 12px 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+
+}
+.content .btn:hover{
+  border:2px solid #f0f;
+  background: #ffffff;
+  color: #000;
+}
+.newslatter form{
+    margin-top: 2%;
+    width:380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 62%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #ff8fe1;
+    outline: none;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border:none;
+    padding:10px 30px;
+    border-radius:30px;
+    background-color: #fd02a9;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right:6px;
+
+}
+
+.feature-img{
+    height: 90%;
+    position: absolute;
+    bottom:0;
+    right: 160px;
+}
+section {
+    display: flex;
+     margin-top: 3%;
+}
+
+a.social {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0 10px;
+    border: #fff solid 2px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.social::before {
+    content: '';
+    background-color: #f0f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+a.social:hover::before {
+    top: 0;
+}
+
+a.social.facebook::before {
+    background-color: #3a5796;
+}
+
+a.social.twitter::before {
+    background-color: #1c9ceb;
+}
+
+a.social.linkedin::before {
+    background-color: #0371ae;
+}
+
+a.social.instagram::before {
+    background-color: #d12c7a;
+}
+
+a.social svg {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s all ease-in-out;
+}
+
+a.social:hover svg {
+    transform: rotate(360deg);
+}
+
+a.social svg path {
+    fill: #383838;
+    transition: 0.5s all ease-in-out;
+}
+
+a.social:hover svg path {
+    fill: #fff;
+}

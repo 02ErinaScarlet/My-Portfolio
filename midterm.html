@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="frames.css">
+    <link rel="preconnect" href="https://fonts,gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Midterm Activities | Portfolio </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <div class="bgcontainer">
+        <div class="container">
+            <div class="navbar">
+             <img src="logo1.png" class="logo">
+             <nav>
+                 <ul>
+                     <li>
+                         <a href="index.html">Home</a>
+                     </li>
+                     <li><a href="aboutme.html">About Me</a></li>
+                     <li>
+                         <a href="gallery.html">Gallery⏷</a>
+                         <ul>
+                             <li><a href="memories.html">Memories</a></li>
+                             <li><a href="current.html">Current Me</a></li>
+                             <li><a href="lovedones.html">Loved Ones</a>
+                             </li>
+                             <li><a href="school.html">School Life </a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#" class="active">Portfolio⏷</a>
+                         <ul>
+                             <li><a href="prelim.html">Prelim Acts</a></li>
+                             <li><a href="midterm.html">Midterm Acts</a></li>
+                             <li><a href="semif.html">Semi-final Acts</a></li>
+                         </ul>
+                     </li>
+                    
+                 </ul>
+             </nav>
+             <h1>My <span>Portfolio</span></h1>
+            </div>
+     </div>
+<!--This is for iframe content-->
+<div class="header">
+    <h1><span> Midterm </span> Activities </h1>
+</div>
+
+<div class="select">
+<select id="MySelectMenu">
+  <option value="Intro to web design/Midterm/labact3(mid.html">Lab Act 4</option>
+  <option value= "Intro to web design/Midterm/lab act 5.html">Lab Act 5</option>
+  <option value= "ITC122 WEBSITES/imagemap.html">Lab Act 6</option>
+  <option value= "Intro to web design/Midterm/L7(AUTOBIOGRAPHY).html">Lab Act 7</option>
+  <option value= "Intro to web design/Midterm/lists.html">Lab Act 8</option>
+  <option value= "Intro to web design/Midterm/Lab Act 9 (ITC122) midterm.html">Lab Act 9</option>
+</select>
+</div>
+<button onClick="newSrc();">Change Iframe Src</button>
+<iframe src="Intro to web design/Lab Act 1 (my profile website).html" id="MyFrame"></iframe>
+
+    <!--This is the footer section-->
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">Jade Miles Dollison</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/eri.nakiri.5" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/jademiles_dollison/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jade-miles-dollison-389357211/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/channel/UC6Em-3CzmDM1CjNxBW1xnYw" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">My Portfolio</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">App design</a></li>
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Anime Arts</a></li>
+          <li><a href="#">Graphic Design</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Prefrences</a></li>
+          <li><a href="index.html">My portfolio</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">My Skills</li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">Adobe Illustrator</a></li>
+          <li><a href="#">Photoshop</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">MyPortfolio.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+<script>
+    
+function newSrc() {
+  var e = document.getElementById("MySelectMenu");
+  var newSrc = e.options[e.selectedIndex].value;
+  document.getElementById("MyFrame").src=newSrc;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>About Me</title>
+<link rel="stylesheet" href="styles2.css">
+     <link rel="preconnect" href="https://fonts,gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+     0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<style>
+ .bgcontainer{
+    background-image: url(bg8.jpg);
+    background-size:cover ;
+}
+       /*This is where the about me content starts*/
+   .main-content{
+    margin: 0;
+    padding: 0;
+    height: 95vh;
+    width: 100%;
+  
+   }
+   .abtmesection{
+  display: flex;
+  padding: 50px;
+  background-color: #0000;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto 0 auto;
+
+   }
+
+   .abtmesection img{
+    height: 550px;
+    width: 550px;
+    margin-right: 3%;
+   }
+   .abtmesection .text{
+    background-color: rgba(0, 0, 0, 0.575);
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+   }
+    .abtmesection h1{
+   margin: 0;
+   margin-left: 25px;
+   color: #ffffff;
+   font-style: 'Josefin sans', sans-serif;
+   font-size: 50px;
+   font-weight: 200;
+    }
+    .abtmesection p{
+    padding-top: 20px;
+    margin-left: 25px;
+    color: azure;
+    font-size: 19px;
+    }
+    /*This is where the column starts*/
+	.container-column {
+	  display: grid;
+	  grid-template-columns: 500px 500px 500px;
+	  text-align: center;
+      background-color:#c00462;
+      height: 70vh;
+      border-color: 5px#c00462;
+      box-shadow: 0 0 4px #a7e5ff, 0 0 2px #f67af0;
+	}
+	.column {
+	  padding: 16px;
+	  height: 400px;
+	  margin: 60px;
+      margin-top: 10%;
+      padding-top: 40px;
+      border-radius: 20px;
+	  background-color: #ffffff;
+
+	}
+   .column h2{
+    padding-top: 5px;
+   }
+   .column p{
+    padding-top: 10px;
+   }
+    .column img{
+        height: 250px;
+        width: 250px;
+    }
+     /*This is where the school section starts*/
+
+/*The banner image*/
+.school-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+
+}
+.school-section p{
+    padding-top: 10px;
+}
+  .banner{
+    width: 100%;
+    height: 105vh;
+    
+  }
+  .banner img{
+    height: 800px;
+    width: 100%;
+  }
+/* School column grid layout*/
+
+.content-sc h3 {
+  font-size: 30px;
+  word-break: break-all;
+  padding-bottom: 2%;
+}
+.content-sc img{
+  height: 260px;
+}
+.row {
+  padding: 8px 15px;
+  height: 70vh;
+  background-color:#c00462;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column-sc {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column-sc {
+float: left;
+width: 23%;
+margin-left: 15px;
+
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content-sc {
+  background-color: white;
+  padding: 15px 15px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<div class="bgcontainer">
+    <div class="container">
+        <div class="navbar">
+         <img src="logo1.png" class="logo">
+         <nav>
+             <ul>
+                 <li>
+                     <a href="index.html">Home</a>
+                 </li>
+                 <li><a href="#" class="active">About Me</a></li>
+                 <li>
+                     <a href="gallery.html">Gallery⏷</a>
+                     <ul>
+                         <li><a href="memories.html">Memories</a></li>
+                         <li><a href="current.html">Current Me</a></li>
+                         <li><a href="lovedones.html">Loved Ones</a>    </li>
+                         <li><a href="school.html">School Life </a></li>
+                     </ul>
+                 </li>
+                 <li><a href="portfolio.html">Portfolio⏷</a>
+                     <ul>
+                         <li><a href="prelim.html">Prelim Acts</a></li>
+                         <li><a href="midterm.html">Midterm Acts</a></li>
+                         <li><a href="semif.html">Semi-final Acts</a></li>
+                     </ul>
+                 </li>
+                
+             </ul>
+         </nav>
+         <h1>My <span>Portfolio</span></h1>
+        </div>
+ </div>
+    <!--This is about me page-->
+    <div class="main-content">
+
+        <div class="abtmesection">
+            <img src="jade.jpg" alt="My profile">
+
+            <div class="text">
+                <h1>About Me</h1>
+                <p>Hi, My Name is Jade Miles O. Dollison. I was born in Taguig city on Jan. 3, 2004. I am the second eldest
+                  daughter out of five siblings in my family. I was given to my grandmother when i was 5 days old which is why i live with my grandmother
+                  instead of my own family. I am an aspiring web designer, full stack web developer, and an artist. I chose my IT course
+                  because i love technology and i was inspired by John vonneumann. I also love science since i was a kid although, at first, I really
+                  wanted to study Multimedia arts because of my talent in arts. I chose to not pursue it because it's an expensive course. 
+                  However, when i got into this Course, i fell in love with coding and graphics designing. I am particularly interested in doing front-end developing more than back-end. 
+                  I am very happy with my decision to pursue this course and I hope i would improve more in the future! I am very much in love with studying and
+                  that's why i am a very curious person who thinks knowledge is power. This is the quote that I really love , "The saddest aspect of Life right now is that Science gathers knowledge faster than society gathers wisdom", by Isaac Asimov, Father of Robotics
+                </p>
+            </div>
+        </div>
+  </div>
+     
+</div>
+<h1 style="text-align: center; padding-top: 2%; padding-bottom:2%;color: rgb(255, 255, 255); background-color: #c00462;">My Interests</h1>
+	<div class="container-column ">
+
+	   <div class="column">
+      <img src="anime.jpg" alt="watching">
+        <h2>Watching Anime</h2>
+		 <p> I love to watch anime since i was a kid, my first anime that i have ever watched was one piece and i'm still a fan till this day.</p>
+	   </div>
+	   <div class="column">
+        <img src="draw.3.jpg" alt="drawing">
+	     <h2> Drawing / Painting</h2>
+		 <p> I was first influenced by anime in drawing so it became my hobby and passion since i was a kid. This is my latest drawing of wednesday addams. </p>
+	   </div>
+	   <div class="column">
+        <img src="read.jpg" alt="reading">
+	     <h2> Reading </h2>
+		 <p> I love to read not just manga, webtoon and manhwa. I also love to study and read knowledgeable books especially tech stuff.</p>
+	   </div>
+	</div>
+
+    <!--This is where the school section starts-->
+    <div class="school-section">
+        <h1>Educational Background</h1>
+        <p>These are the schools that i studied in from elementary to college</p>
+      </div>
+      
+<div class="banner">
+<img src="peakpx.jpg" alt="school classroom">
+</div>
+    <!-- Portfolio school Grid -->
+<div class="row">
+    
+    <h1 style="color: #ffffff; padding-top: 3%;padding-bottom: 1%; padding-left: 2%;">My Education Background</h1>
+
+    <div class="column-sc">
+      <div class="content-sc">
+        <img src="gcalogo.png" alt="gca" style="width:100;">
+        <h3>Elem-HS</h3>
+        <p>Studied in Great Christian Academy since 2006-2019</p>
+      </div>
+    </div>
+    <div class="column-sc">
+        <div class="content-sc">
+        <img src="svn.png" alt="svnhs" style="width:100%">
+        <h3>SHS</h3>
+        <p>Studied in Sunvalley National Highschool since 2019-2021</p>
+      </div>
+    </div>
+    <div class="column-sc">
+        <div class="content-sc">
+        <img src="ucp.jpg" alt="ucp" style="width:100%">
+        <h3>1st yr College</h3>
+        <p>Studied in Universal College of Paranaque since 2021-2022</p>
+      </div>
+    </div>
+    <div class="column-sc">
+        <div class="content-sc">
+        <img src="arellano.png" alt="arellano" style="width:100%">
+        <h3>Current University</h3>
+        <p>Studying in Arellano University - Jose Abad Santos Campus since 2022</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">Jade Miles Dollison</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/eri.nakiri.5" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/jademiles_dollison/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jade-miles-dollison-389357211/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/channel/UC6Em-3CzmDM1CjNxBW1xnYw" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">My Portfolio</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">App design</a></li>
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Anime Arts</a></li>
+          <li><a href="#">Graphic Design</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Prefrences</a></li>
+          <li><a href="index.html">My portfolio</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">My Skills</li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">Adobe Illustrator</a></li>
+          <li><a href="#">Photoshop</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">MyPortfolio.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- END MAIN -->
+  </div>
+</body>
+</html>

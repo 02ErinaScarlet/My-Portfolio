@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="filtergal.css">
+    <link rel="preconnect" href="https://fonts,gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Loved Ones | Gallery </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="bgcontainer">
+        <div class="container">
+            <div class="navbar">
+             <img src="logo1.png" class="logo">
+             <nav>
+                 <ul>
+                     <li>
+                         <a href="index.html">Home</a>
+                     </li>
+                     <li><a href="aboutme.html">About Me</a></li>
+                     <li>
+                         <a href="gallery.html" class="active">Gallery⏷</a>
+                         <ul>
+                             <li><a href="memories.html">Memories</a></li>
+                             <li><a href="current.html">Current Me</a></li>
+                             <li><a href="#">Loved Ones</a>
+                             </li>
+                             <li><a href="school.html">School Life </a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#">Portfolio⏷</a>
+                         <ul>
+                             <li><a href="prelim.html">Prelim Acts</a></li>
+                             <li><a href="midterm.html">Midterm Acts</a></li>
+                             <li><a href="semif.html">Semi-final Acts</a></li>
+                         </ul>
+                     </li>
+                    
+                 </ul>
+             </nav>
+             <h1>My <span>Portfolio</span></h1>
+            </div>
+     </div>
+     <h2>Gallery</h2>
+     <div id="myBtnContainer">
+       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+       <button class="btn" onclick="filterSelection('nature')"> Family</button>
+       <button class="btn" onclick="filterSelection('cars')"> Friends</button>
+       <button class="btn" onclick="filterSelection('people')"> Classmates</button>
+     </div>
+     
+     <!-- Portfolio Gallery Grid -->
+
+     <div class="row">
+       <div class="column nature">
+         <div class="content">
+           <img src="airport.jpg" alt="airport" style="width:100%">
+           <h4>NAIA Airport</h4>
+           <p>My Beloved Grandmothers</p>
+         </div>
+       </div>
+
+       <div class="column nature">
+         <div class="content">
+           <img src="baguio4.jpg" alt="Baguio Fam" style="width:100%">
+           <h4>Baguio</h4>
+           <p>Me and my Family</p>
+         </div>
+       </div>
+
+       <div class="column nature">
+         <div class="content">
+           <img src="baguio2.jpg" alt="with my lola" style="width:100%">
+           <h4>Burnham park, Baguio City</h4>
+           <p>Me and my lola linda in Baguio on 2015</p>
+         </div>
+       </div>
+     
+       <div class="column nature">
+         <div class="content">
+           <img src="baguio6.jpg" alt="family" style="width:100%">
+           <h4>The Mansion</h4>
+           <p>My family</p>
+         </div>
+       </div>
+
+       <div class="column nature">
+        <div class="content">
+          <img src="bday.jpg" alt="family" style="width:100%">
+          <h4>Eldest Sister's Bday</h4>
+          <p>My Ate Jeanne grey's 18th Bday</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="bataan4.jpg" alt="family" style="width:100%">
+          <h4>Bataan</h4>
+          <p>Tita Jocy and Kirstin Vacation last 2015</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="bataan2.jpg" alt="family" style="width:100%">
+          <h4>Bataan</h4>
+          <p>Me with my family last 2015</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="family.jpg" alt="family" style="width:100%">
+          <h4>Dollison Family</h4>
+          <p>Me with my own family</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="swimming.jpg" alt="family" style="width:100%">
+          <h4>Dollison Sisters</h4>
+          <p>Me with my 3 sisters in Cavite City</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="fam.jpg" alt="family" style="width:100%">
+          <h4>Me with my Cousin and Siblings</h4>
+          <p>My 6th Bday</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="baguio13.jpg" alt="family" style="width:100%">
+          <h4>Baguio</h4>
+          <p>My grandmothers, mommy diday and lola linda </p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="singapore10.gif" alt="family" style="width:100%">
+          <h4>Singapore</h4>
+          <p>Me with my papa, tito joseph and lola linda</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="singapore1.jpg" alt="family" style="width:100%">
+          <h4>Singapore</h4>
+          <p>In Universal Studios</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="singapore2.jpg" alt="family" style="width:100%">
+          <h4>Universal Studios</h4>
+          <p>2016</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="singapore3.jpg" alt="family" style="width:100%">
+          <h4>Singapore</h4>
+          <p>Visited Jurong Bird Park, Night Safari and River Wonders</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="singapore4.jpg" alt="family" style="width:100%">
+          <h4>Singapore</h4>
+          <p>Near Universal Studios</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="singapore7.gif" alt="family" style="width:100%">
+          <h4>Universal Studios</h4>
+          <p>Me in Sentosa, Singapore </p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="singapore6.gif" alt="family" style="width:100%">
+          <h4>Jurong Bird Park</h4>
+          <p>My family in a car</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="surigao.jpg" alt="family" style="width:100%">
+          <h4>Surigao Del sur</h4>
+          <p>My lola with Uncle toto</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="whale.jpg" alt="family" style="width:100%">
+          <h4>Cebu</h4>
+          <p>Me diving in whale shark, Oslob</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="tita.jpg" alt="family" style="width:100%">
+          <h4>Cebu</h4>
+          <p>Me diving in whale shark, Oslob</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="jerum.jpg" alt="family" style="width:100%">
+          <h4>Jerome's Family</h4>
+          <p>My Boyfriend's family In Baguio City</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="sisters.jpg" alt="People" style="width:100%">
+          <h4>Dollison Sisters</h4>
+          <p>Me and my sister in a cavite swimming resort last 2017</p>
+        </div>
+      </div>
+
+       <div class="column cars">
+         <div class="content">
+           <img src="bday2.gif" alt="Car" style="width:100%">
+           <h4>My 7th Bday</h4>
+           <p>Me with my childhood friends and siblings</p>
+         </div>
+       </div>
+
+       <div class="column cars">
+         <div class="content">
+           <img src="cousing and fam.jpg" alt="Car" style="width:100%">
+           <h4>Tagaytay City</h4>
+           <p>Skyranch</p>
+         </div>
+       </div>
+     
+       <div class="column cars">
+         <div class="content">
+           <img src="besties1.jpg" alt="People" style="width:100%">
+           <h4>Near Feu</h4>
+           <p>Me and my Childhood bestfriends</p>
+         </div>
+       </div>
+            
+       <div class="column cars">
+        <div class="content">
+          <img src="andrade.jpg" alt="People" style="width:100%">
+          <h4>Me and my Bestfriend, Kristine</h4>
+          <p>Taken at her home during the film for money dance cover</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="besties3.jpg" alt="People" style="width:100%">
+          <h4>Me and Gwynn</h4>
+          <p>My classmate and childhood bestfriend since 2009</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="besties4.jpg" alt="People" style="width:100%">
+          <h4>Me and my besties</h4>
+          <p>Me, Jana and Gwynn in UST </p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="besties5.jpg" alt="People" style="width:100%">
+          <h4>OG Squad</h4>
+          <p>My bestfriends last 2014, swimming in gwynn's condo</p>
+        </div>
+      </div>
+
+
+
+       <div class="column people">
+         <div class="content">
+           <img src="hs.jpg" alt="People" style="width:100%">
+           <h4>Gr.10 HS</h4>
+           <p>In GCA, Bday of my Adviser</p>
+         </div>
+       </div>
+       <div class="column people">
+        <div class="content">
+          <img src="hs1.jpg" alt="People" style="width:100%">
+          <h4>Modeling event</h4>
+          <p>Last 2019</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="h2.jpg" alt="People" style="width:100%">
+          <h4>Modeling event</h4>
+          <p>Last 2019</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="h8.jpg" alt="People" style="width:100%">
+          <h4>Gr.10 HS</h4>
+          <p>GCA Founding Anniv. Event</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="hs2.jpg" alt="People" style="width:100%">
+          <h4>Gr.6 Class</h4>
+          <p>This is my batch last 2014-2015</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="communion.gif" alt="People" style="width:100%">
+          <h4>Communion</h4>
+          <p>This was taken last 2012</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="class.jpg" alt="People" style="width:100%">
+          <h4>Gr. 9 Class Picture</h4>
+          <p>This was taken last 2017-2018</p>
+        </div>
+      </div>
+     <!-- END GRID -->
+     </div>
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">Jade Miles Dollison</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/eri.nakiri.5" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/jademiles_dollison/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jade-miles-dollison-389357211/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/channel/UC6Em-3CzmDM1CjNxBW1xnYw" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">My Portfolio</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">App design</a></li>
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Anime Arts</a></li>
+          <li><a href="#">Graphic Design</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Prefrences</a></li>
+          <li><a href="index.html">My portfolio</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">My Skills</li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">Adobe Illustrator</a></li>
+          <li><a href="#">Photoshop</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">MyPortfolio.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="filtersc.js"></script>
+</body>
+</html>
